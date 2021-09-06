@@ -45,7 +45,7 @@ body{
     border-radius: 50%;
     height: 500px;
     width: 500px;
-    overfolw: hidden;
+    overflow: hidden;
 }
 .icon{
     width: 200px;
