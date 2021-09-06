@@ -1,0 +1,92 @@
+body{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.work{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: radial-gradient(red,rgba(0,0,0,15)),
+    url(../img/blue-purple-brick-wall-textured-background.jpg);
+    background-blend-mode:multiply;
+    animation: animatebgcolor 5s linear infinite;
+}
+@keyframes animatebgcolor{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.work::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(rgba(255,0,0,0.75),transparent,transparent);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+.work::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(rgba(255,0,0,0.75),transparent,transparent);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+.icon{
+    width: 200px;
+    z-index: 4;
+    text-align: center;
+}
+.icon h2{
+    color: #fff;
+    text-shadow: 0 10px 10px #000;
+    box-shadow: 10px 0 0 #fff;
+    display: inline-block;
+    overflow: hidden;
+    animation: texttyping 5s steps(10) infinite;
+}
+@keyframes texttyping{
+    0%,90%,100%{
+       width: 1px; 
+    }
+    30%,60%{
+        width: 145.69px;
+    }
+}
+.icon svg{
+    overflow: visible;
+    margin-bottom: 20px;
+}
+.icon svg path{
+    stroke: #fff;
+    stroke-width: 10px;
+    fill: transparent;
+    filter: drop-shadow(0 20px 10px #000) blur(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
