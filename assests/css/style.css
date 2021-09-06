@@ -32,8 +32,8 @@ body{
     transform: translate(-50%,-50%);
     background: radial-gradient(rgba(255,0,0,0.75),transparent,transparent);
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 .work::after{
     content: '';
